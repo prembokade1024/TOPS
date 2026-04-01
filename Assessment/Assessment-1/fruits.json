@@ -1,0 +1,10 @@
+{
+    "Apple": {
+        "qty": 47,
+        "price": 2.5
+    },
+    "Banana": {
+        "qty": 2,
+        "price": 1.0
+    }
+}

@@ -1,17 +1,14 @@
 # 8. Write a Python program to check whether a list contains a sublist.
 
 def contains_sublist(main_list, sub_list):
-    # An empty sublist is technically contained in any list
     if not sub_list:
         return True
     
     n = len(main_list)
     m = len(sub_list)
     
-    # Iterate through the main list
-    # We only need to go up to index n - m
+
     for i in range(n - m + 1):
-        # Compare a slice of the main list with the sublist
         if main_list[i : i + m] == sub_list:
             return True
             

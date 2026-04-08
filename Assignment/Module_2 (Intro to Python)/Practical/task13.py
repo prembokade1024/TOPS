@@ -4,11 +4,8 @@ def sort_dict_by_value(d, descending=False):
     Sorts a dictionary by value.
     'reverse=descending' determines if the sort order is descending.
     """
-    # d.items() gives us (key, value) pairs
-    # key=lambda item: item[1] tells sorted() to look at the value (index 1)
     sorted_items = sorted(d.items(), key=lambda item: item[1], reverse=descending)
     
-    # Convert back to a dictionary
     return dict(sorted_items)
 
 my_dict = {'Apple': 10, 'Orange': 5, 'Banana': 20, 'Grapes': 15}

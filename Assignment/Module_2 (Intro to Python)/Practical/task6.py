@@ -4,10 +4,8 @@ def replace_not_poor(text):
     not_index = text.find('not')
     poor_index = text.find('poor')
 
-    # Ensure both exist and 'not' comes before 'poor'
+
     if not_index != -1 and poor_index != -1 and not_index < poor_index:
-        # Construct the string: 
-        # Part before 'not' + 'good' + Part after 'poor'
         return text[:not_index] + 'good' + text[poor_index + 4:]
     
     return text

@@ -1,0 +1,47 @@
+restaurant
+
+customer
+
+delivery
+
+customer -> scheduled insert
+
+foreign key
+
+connected
+
+customer -> restaurant
+
+restaurant -> rider
+
+
+sql - structured query language - queries
+non sql - no any queries
+
+sql			non-sql
+table-structure		key and value pair
+workbench 		mongodb, SQLite
+queries			queries
+table			key and value pair
+reliable		reliable
+decrease 		increase
+
+
+orm - object relational mapping
+queries
+
+object - object mapping
+one object map another object
+
+orm methods : 
+get    - to get the data - single
+create - creating an object
+all    - fetching all object
+filter - filtering an object
+
+session : order without session
+session : after login and before logout
+duration website track
+tracking process session
+
+session timeout

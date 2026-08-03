@@ -1,0 +1,42 @@
+[
+  {
+    "song_id": "S101",
+    "title": "Blinding Lights",
+    "artist": "The Weeknd",
+    "genre": "Synthwave",
+    "streams": 3800000000,
+    "popularity": 95
+  },
+  {
+    "song_id": "S102",
+    "title": "Shape of You",
+    "artist": "Ed Sheeran",
+    "genre": "Pop",
+    "streams": 3500000000,
+    "popularity": 90
+  },
+  {
+    "song_id": "S103",
+    "title": "As It Was",
+    "artist": "Harry Styles",
+    "genre": "Indie Pop",
+    "streams": 2900000000,
+    "popularity": 92
+  },
+  {
+    "song_id": "S104",
+    "title": "Stay",
+    "artist": "The Kid LAROI & Justin Bieber",
+    "genre": "Pop Rock",
+    "streams": 2700000000,
+    "popularity": 88
+  },
+  {
+    "song_id": "S105",
+    "title": "Levitating",
+    "artist": "Dua Lipa",
+    "genre": "Disco Pop",
+    "streams": 2400000000,
+    "popularity": 89
+  }
+]

@@ -1,0 +1,6 @@
+TransactionID;User_ID;Amount;Payment_Status;Payment_Method
+TXN1001;USR001;250.00;Success;UPI
+TXN1002;USR002;;Failed;Wallet
+TXN1003;;1200.50;Success;NetBanking
+TXN1004;USR004;50.00;Success;
+TXN1005;USR005;500.00;Pending;UPI

@@ -39,12 +39,7 @@ plt.show()
 plt.close()
 print("Task 2 plot created successfully.\n")
 
-# ==========================================
 # TASK 3: Zomato Cost vs Rating (FIXED)
-# ==========================================
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
 
 print("--- TASK 3: Zomato Cost vs Rating ---")
 df_zomato = pd.read_csv('zomato_restaurants.tsv', sep='\t')

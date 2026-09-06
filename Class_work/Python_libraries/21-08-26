@@ -1,0 +1,60 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.tree import DecisionTreeClassifier,plot_tree
+from sklearn.metrics import accuracy_score
+
+df = pd.read_csv("student.csv")
+print(df.head())
+
+df['Result'] = df['Result'].map({'Fail':0,'Pass':1})
+
+X = df[['Hours_Studied','Attendance']]
+y = df['Result']
+
+x_train,x_test,y_train,y_test = train_test_split(
+    X,
+    y,
+    test_size = 0.2,
+    random_state = 42
+)
+
+model = DecisionTreeClassifier(
+    criterion='gini',
+    max_depth=5,
+    random_state=42
+)
+
+model.fit(x_train, y_train)
+y_pred = model.predict(x_test)
+
+acc_score = accuracy_score(y_test, y_pred)
+print(acc_score)
+
+feature_importances_ = model.feature_importances_
+print("feature importance :", feature_importances_)
+
+plt.bar(
+    X.columns,
+    feature_importances_
+    
+)
+plt.xlabel('Features')
+plt.ylabel('Importance')
+plt.title('Feature importance')
+plt.show()
+
+
+plt.figure(figsize=(10,10))
+plot_tree(
+    model,
+    feature_names=X.columns,
+    class_names=['0','1'],
+    filled=True,
+    rounded=True,
+    fontsize=8
+)
+plt.title('Decision Tree')
+plt.show()
